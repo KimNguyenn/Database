@@ -16,9 +16,9 @@
 -- CREATE DATABASE db1; //creates the hw6 database
 -- USE db1; //Puts the hw6 database into use so that you can add and query into this database
 7)  Still in MySQL WB, open CreateDBRetail.sql file and click run. It will create the tables.
-8) Still in MySQL WB, open InsertDB.sql file and click run. It will insert data into the tables. (You can do the followiing commands to see all the tables in your database and individual tables:  -- SHOW TABLES; //shows all the tables in your database - Should show customer, item, and company  -- SELECT * FROM select_table // Replace select_table with either customer, item, or company )
-10) Now that your database is now set up, go to your chosen internet browser you prefer (Chrome, Firefox, etc)
-11) In the searchbar type in localhost/project and press enter. A webpage with a text fields should pop up.
-12) Interact with the website and enjoy!
+8) Still in MySQL WB, open InsertDB.sql file and click run. It will insert data into the tables. (You can do the followiing commands to see all the tables in your database and individual tables:  -- SHOW TABLES; //shows all the tables in your database - Should show customer, item, and company  -- SELECT * FROM select_table // Replace select_table with either customer, item, or company 
+9) Now that your database is now set up, go to your chosen internet browser you prefer (Chrome, Firefox, etc)
+10) In the searchbar type in localhost/project and press enter. A webpage with a text fields should pop up.
+11) Interact with the website and enjoy!
 
 _Helpful tip: If your MySQL Workbench has a unique password set up, you must enter in your password into the config.inc file that is found in the ://xampp/phpMyAdmin folder. Also will need to add your password into the db_connect.php file that was copied into the ://xampp/htdocs/project folder._
