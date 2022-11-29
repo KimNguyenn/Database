@@ -1,32 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+    <title>
+		<head> Main Page</head>
+	</title>
+	<center>
+	<h1>Welcome to Squarely Odd Kidz Retail Store</h1>
+	<h2>----------------------------------------------------------------------------------</h2>
+	</center>
 <?php
-$servername = "50.87.195.157";
-$username = "retaily7_lisa";
-$password = "lisabates";
-$db = "retaily7_retail_store";
-
-
-$con = mysqli_connect($servername, $username, $password, $db);
-
-if (!$con) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    exit();
-  }
-
-# $txtName = $_POST['txtName'];
-# $txtEmail = $_POST['txtEmail'];
-# $txtPhone = $_POST['txtPhone'];
-#,$txtMessage = $_POST['txtMessage'];
-
-
-
-# $sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
-
-
-# $rs = mysqli_query($con, $sql);
-
-# if($rs)
-# {
-	# echo "Contact Records Inserted";
-# }
-
+include "db_connect.php";
+include "form.php";
+if ($mysqli->connect_errno){
+	echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;}
+$mysqli->close();
 ?>
+<center>
+<h2>Link below is for admin use!</h2>
+<a href="admin.php"> Click here if admin </a>
+</center>
+<body>
+
+</body>
+</html>

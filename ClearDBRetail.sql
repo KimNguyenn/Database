@@ -1,7 +1,7 @@
 -- Delete the tables when needed
-
-DROP TABLE CUSTOMER;
-
-DROP TABLE ITEM;
-
 DROP TABLE COMPANY;
+DROP TABLE ITEM;
+DROP TABLE CUSTOMER
+
+
+
