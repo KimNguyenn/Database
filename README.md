@@ -1,22 +1,24 @@
 # Database
-## This is a tutorial on how to view our database design in mySQL. This is also a mini tutorial on some basic SQL commands.
-## To take a look at our database we're going to use for our project, you would need to follow these steps:
-_Make sure you have MySQL Workbench Installed. This is a link that you can use to download: https://dev.mysql.com/downloads/workbench/_
-1) Download all of the files for this projects.
-2) Open up your local server.
-3) Open a the CreateDBRetail.sql file _or_ Copy & Paste the contents of the CreateDBRetail.sql into a new SQL File.
-4) At the top of the file, enter the following lines of code: 
-- CREATE DATABASE RetailTest; \\where RetailTest is the name of the database (can be any name)
-- USE RetailTest; \\ This line applies the new database you just created
-- The rest of the file should be what was in CreateDBRetail.sql
-5) Press the Execute button to create the Database and the tables of our project. 
-- The excute button looks like a lightning bolt _or_ you can click Query in the toolbar on the top and click Execute all
-6) If you want to see what tables are in the database you just created:
-- Make sure that the file no longer has any CREATE commands. You can comment out each line or just delete from the file.
-- Once your file is ready, enter the following code:
-- SHOW TABLES; \\Should display the tables that are in the database.
-7) You can also look at the individual tables by entering (executing only one at a time) :
-_(Since there isn't any data inserted into the tables, only the fields of each table will display as null. )_
-- SELECT * FROM CUSTOMER;
-- SELECT * FROM ITEM;
-- SELECT * FROM COMPANY;
+## This is a tutorial on how to view our database in MySQL Workbench and how to view our Website
+## To take a look at our Retail Website we're going to use for our project, you would need to follow these steps:
+1) Make sure to have XAMPP installed on your machine.
+- Link to download the correct package for your computer: https://www.apachefriends.org/download.html
+2) Make sure Apache and MySQL are running by clicking start on the XAMPP Control Panel.
+3) Make sure you have MySQL Workbench and MySQL Server is on your machine.
+-Link to download MySQL Workbench and Server: https://dev.mysql.com/downloads/workbench/
+4) Download the ZIP file and then extract the files. There should be the following files and folders inside of the extracted folder:
+-CreateDBRetail.sql
+-InsertDB.sql
+-ClearDBRetail.sql
+-folder that includes files: admin.php, buy.php, datatable.php, db_connect.php, form.php, history.php, index.php, insert_customer.php, insert_item.php
+5) Copy the homework folder into the :// xampp/htdocs (Where ever you saved XAMPP to and inside the xampp folder you will open up the folder labeled htdocs and copy the project folder inside.
+6) Open MySQL Workbench and run the following commands in your local server:
+-- CREATE DATABASE db1; //creates the hw6 database
+-- USE db1; //Puts the hw6 database into use so that you can add and query into this database
+7)  Still in MySQL WB, open CreateDBRetail.sql file and click run. It will create the tables.
+8) Still in MySQL WB, open InsertDB.sql file and click run. It will insert data into the tables. (You can do the followiing commands to see all the tables in your database and individual tables:  -- SHOW TABLES; //shows all the tables in your database - Should show customer, item, and company  -- SELECT * FROM select_table // Replace select_table with either customer, item, or company )
+10) Now that your database is now set up, go to your chosen internet browser you prefer (Chrome, Firefox, etc)
+11) In the searchbar type in localhost/project and press enter. A webpage with a text fields should pop up.
+12) Interact with the website and enjoy!
+
+_Helpful tip: If your MySQL Workbench has a unique password set up, you must enter in your password into the config.inc file that is found in the ://xampp/phpMyAdmin folder. Also will need to add your password into the db_connect.php file that was copied into the ://xampp/htdocs/project folder.
