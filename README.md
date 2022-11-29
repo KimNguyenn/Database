@@ -21,4 +21,4 @@
 11) In the searchbar type in localhost/project and press enter. A webpage with a text fields should pop up.
 12) Interact with the website and enjoy!
 
-_Helpful tip: If your MySQL Workbench has a unique password set up, you must enter in your password into the config.inc file that is found in the ://xampp/phpMyAdmin folder. Also will need to add your password into the db_connect.php file that was copied into the ://xampp/htdocs/project folder. _
+_Helpful tip: If your MySQL Workbench has a unique password set up, you must enter in your password into the config.inc file that is found in the ://xampp/phpMyAdmin folder. Also will need to add your password into the db_connect.php file that was copied into the ://xampp/htdocs/project folder._
